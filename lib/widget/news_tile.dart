@@ -8,7 +8,7 @@ class NewsTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
-      children: [
+      children:  [
         ClipRRect(
           borderRadius: BorderRadiusGeometry.circular(6),
           child: Image.network(
@@ -18,8 +18,8 @@ class NewsTile extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        SizedBox(height: 12),
-        Text(
+      const  SizedBox(height: 12),
+      const  Text(
           ' iron is very important in diet. it helps children grow and increase resistance to disease. it is particularly important for young women, pregnant women, and old people. we all need a lot of iron in our diet.',
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
@@ -29,8 +29,8 @@ class NewsTile extends StatelessWidget {
             color: Colors.black87,
           ),
         ),
-        SizedBox(height: 8),
-        Text(
+      const  SizedBox(height: 8),
+      const  Text(
           'iron is very important in diet. it helps children grow and increase resistance to disease. it is particularly important for young women',
           style: TextStyle(color: Colors.grey, fontSize: 14),
           maxLines: 2,
