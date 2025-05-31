@@ -18,6 +18,7 @@ CategoryModel(image:'assets/general.avif' , categoryName: 'General'),
     return SizedBox(
       height: 120,
       child: ListView.builder(
+        physics: BouncingScrollPhysics(),
         itemCount: categories.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
