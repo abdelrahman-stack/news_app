@@ -22,11 +22,8 @@ CategoryModel(image:'assets/general.avif' , categoryName: 'General'),
         itemCount: categories.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.only(right: 16),
-            child: CategoryCard(
-              category: categories[index],
-            ),
+          return CategoryCard(
+            category: categories[index],
           );
         },
       ),
