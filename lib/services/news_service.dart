@@ -9,7 +9,7 @@ class NewsService {
   Future<List<ArticleModel>> getNews() async {
     try {
       Response response = await dio.get(
-        'https://newsapi.org/v2/top-headlines?apikey=6f3890378b854bb8bc5022cbb20dd025&country=us&category=general',
+        'https://newsapi.org/v2/everything?q=bitcoin&apiKey=6f3890378b854bb8bc5022cbb20dd025'
       );
 
       Map<String, dynamic> jsonData = response.data;
@@ -32,3 +32,7 @@ class NewsService {
     }
   }
 }
+
+
+
+        // 'https://newsapi.org/v2/top-headlines?apikey=6f3890378b854bb8bc5022cbb20dd025&country=us&category=general',
